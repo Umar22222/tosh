@@ -1,5 +1,5 @@
 function playGame(userChoice) {
-    const choices = ['rock', 'paper', 'scissors'];
+    const choices = ['Tosh', `Qog'oz`, 'Qaychi'];
     const computerChoice = choices[Math.floor(Math.random() * 3)];
   
     let result = '';
@@ -7,9 +7,9 @@ function playGame(userChoice) {
     if (userChoice === computerChoice) {
       result = "Durang! Ikkalasi ham " + userChoice + " tanladi.";
     } else if (
-      (userChoice === 'rock' && computerChoice === 'scissors') ||
-      (userChoice === 'scissors' && computerChoice === 'paper') ||
-      (userChoice === 'paper' && computerChoice === 'rock')
+      (userChoice === 'Tosh' && computerChoice === 'Qaychi') ||
+      (userChoice === 'Qaychi' && computerChoice === `Qog'oz`) ||
+      (userChoice === `Qog'oz` && computerChoice === 'Tosh')
     ) {
       result = "Siz g'alaba qozondingiz! " + userChoice + " " + computerChoice + "ni yengdi.";
     } else {
